@@ -1,2 +1,2 @@
-# ShuttleSmartApp
-Project 2 Group 22 Shuttle Smart App Repo
+# HireApainterApp
+ADP3 Hire A Painter Capstone Frontend app

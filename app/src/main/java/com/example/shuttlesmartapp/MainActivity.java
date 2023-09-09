@@ -14,16 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnManageCustomers = findViewById(R.id.btnManageCustomers);
         Button btnManageEmployees = findViewById(R.id.btnManageEmployees);
         Button btnProjects = findViewById(R.id.btnManageProjects);
 
-        btnManageCustomers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openCustomerManager();
-            }
-        });
 
         btnManageEmployees.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,15 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
 //        btnProjects.setOnClickListener(new View.OnClickListener() {
 //            @Override
-//            public void onClick(View view) { openProjectManager(); }
+//            public void onClick(View view) { openCustomerManager(); }
 //        });
 
     }
 
-    public void openCustomerManager() {
-        Intent intent = new Intent(this, CustomerManager.class);
-        startActivity(intent);
-    }
 
     public void openEmployeeManager() {
         Intent intent = new Intent(this, EmployeeManager.class);
